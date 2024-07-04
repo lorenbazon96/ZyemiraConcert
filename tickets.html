@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zyemira-Concert</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/gif" href="https://raw.githubusercontent.com/lorenbazon96/Web/main/ikonaa.gif">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+      body {
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      #logo {
+        display: grid;
+        position: absolute;
+        top: 120px;
+        left: 120px; 
+      }
+      #td {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        max-width: 18%;
+      }
+      #td1 {
+        position: absolute;
+        top: 0px;
+        left: 20%;
+        max-width: 80%;
+      }
+      #po {
+        position: absolute;
+        top:170px;
+        left: 30%;
+        max-width: 100%;
+        height: auto;
+      }
+      #td2 {
+        position: absolute;
+        top: 520px;
+        left: 10%;
+        max-width: 18%;
+      }
+      #s1 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        max-width: 100%;
+        z-index: -1;
+        height: auto;
+      }
+      .naviga {
+        font-size:32px;
+        font-weight: bold;
+      }
+      .nav-item {
+        margin-right: 30px;
+      }
+      .navbar-nav .nav-link.lik {
+        color: #a000e8 !important;
+      }
+      .navbar-nav .nav-link.lik:hover {
+        color: #d400ff !important;
+      }
+      .p1 {
+        font-family: "Helvetica";
+        font-weight: 600; 
+      }
+      #s3 {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        max-height: 300px;
+      }
+      #party{
+        position: absolute;
+        z-index: 1;
+        font-size: 90px;
+        font-weight: 500;
+        font-family:  'Anton', sans-serif;
+        margin-top: 50px;
+        margin-left: 0%;
+        line-height: 1.0;
+      }
+      #des {
+        position: absolute;
+        z-index: 1;
+        font-family: "Helvetica", sans-serif;
+        margin-top: 50px;
+        margin-left: 25%;
+        line-height: 1.3;
+        font-weight: bold;
+      }
+      .buton {
+        position: absolute;
+        z-index: 1;
+        font-family: "Helvetica", sans-serif;
+        margin-top: 195px;
+        margin-left: 25%;
+        font-weight: bold;
+        width: 200px;
+        border-radius: 55px;
+        border-width: 3px;
+        border-color: white;
+        color: white;
+      }
+      .btn-custom:hover {
+        background-color: #ffffff; 
+        color: rgb(0, 0, 0); 
+        border-color: #ff00fb; 
+      }
+      .carousel-control-prev-icon {
+        background-image: url('https://raw.githubusercontent.com/lorenbazon96/Web/main/Strssoke%20%E2%80%93%20kopija.png');
+        background-size: 100% 100%;
+        width: 130px;
+        height: 50px;
+      }
+      
+      .carousel-control-next-icon {
+        background-image: url('https://raw.githubusercontent.com/lorenbazon96/Web/main/Strssoke.png');
+        background-size: 100% 100%;
+        width: 130px;
+        height: 50px;
+      }
+      #td18 {
+        position: absolute;
+        left: 0%;
+        top:7080px;
+        width: 50%;
+        z-index: -1;
+      }
+      #td19 {
+        position: absolute;
+        right: 0%;
+        top:7080px;
+        width: 50%;
+      }
+      #td20 {
+        position: absolute;
+        left: 0%;
+        top:2000px;
+        width: 100%;
+        z-index: -2;
+      }
+     
+      .btn-custom2 {
+        background-color: #ffffff;
+        border-radius: 25px;
+        width: 300px;
+        height: 55px;
+        font-weight: 700;
+        color: rgb(165, 0, 230);
+        border-color: #d400ff;
+        border-width: 3px;
+      }
+      .btn-custom2:hover {
+        background-color: rgb(165, 0, 230);
+        color: #ffffff;
+        border-color: #ffffff;
+        border-width: 6px;
+        
+      }
+      #par5 {
+        font-family: "Helvetica", sans-serif;
+        line-height: 1.3;
+        font-weight: bold;
+        margin-top: 450px;
+        margin-left: -40px;
+        text-align: center;
+      }
+      #col1 {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 450px;
+        margin-top: 200px;
+        font-weight: 500;
+      }
+      #col2 {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 700px;
+        margin-top: 200px;
+        font-weight: 500;
+      }
+      .link:hover {
+        color:#ff00fb;
+        font-weight: 700;
+      }
+      .link {
+        color: #000000;
+      }
+      .li {
+        font-weight: 800;
+      }
+      .buton5 {
+        position:absolute;
+        margin-top: 100px;
+        margin-left: 900px;
+        color: #a000e8;
+        border-color: #a000e8;
+        width: 200px;
+        border-radius: 55px;
+        border-width: 3px;
+        font-weight: bold;
+      }
+      .form-control {
+        border: 2px solid #a000e8;
+        box-shadow: 0 0 10px rgba(160, 0, 232, 0.5); 
+      }
+
+      .form-select {
+        border: 2px solid #a000e8; 
+        box-shadow: 0 0 10px rgba(160, 0, 232, 0.5); 
+        color: #a000e8;
+      }
+
+      .form-select:focus {
+        outline: none; 
+        border-color: #a000e8; 
+        box-shadow: 0 0 10px rgba(160, 0, 232, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid my-5 container-sm container-md container-lg">
+      <div class="row">
+          <div class="col-md-2 left-side" style="height: 750px">
+              <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Logo.png" id="logo" class="img-fluid">
+              <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Paper%20Tear.png" id="td" class="img-fluid">
+              <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Grunge.png"  id="td1" class="img-fluid">
+              <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Stroke.png"  id="td2" class="img-fluid">
+          </div>
+          <div class="col-md-7" style="height: 750px">
+              <div class="row">
+                <div class="col-4 left-side-top" style="height: 100px">
+                </div>  
+                <div class="col-8 right-side-top" style="height: 100px">
+                  <nav class="navbar navbar-expand-lg naviga">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav naviga">
+                          <li class="nav-item">
+                            <a class="nav-link lik" style="color: #a000e8;" href="index.html">HOME</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link lik active text-b03ec3" style="color: #a000e8;" aria-current="page" href="event.html">EVENT</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link lik" style="color: #a000e8;" href="tickets.html">TICKETS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link lik" style="color: #a000e8;" href="about.html">ABOUT</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                  <div class="col-12 right-side-bottom" style="height: 500px">
+                    <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Untitled-1.gif" id="po" class="img-fluid">
+                  </div>
+                  <div class="col-12 right-side-bottom " style="height: 150px">
+                    <p class="text-center p1" style="font-size: large"><b style="color:rgb(165, 0, 230)">Lorem Ipsum is simply </b> dummy text of the printing and typesetting industry. <br> 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
+                       when an unknown printer took a galley of type and scrambled it <br> 
+                       to make a type specimen book.</p>
+              </div>
+          </div>
+          <div class="col-md-3 right-side" style="height: 750px">
+            <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Plac.png" id="s1" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 " style="height: 250px">
+          <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/Rectangle.png" id="s3" class="img-fluid">
+          <p id="party"><span style="color: white;">PARTY</span> YOUR <br> HEART OUT!</p>
+          <p id="des"><span style="color: white;">Lorem Ipsum is simply </span>dummy text of the printing <br>
+            and typesetting industry. Lorem Ipsum has been the industry's <br>
+            standard dummy text ever since the 1500s, when an unknown printer <br>
+            took a galley of type and scrambled it to make a type specimen book. <br>
+            It has survived not only five centuries, but also the leap into <br>
+            electronic typesetting, remaining essentially unchanged.</p>
+          <button type="button" class="btn btn-outline-primary buton btn-custom" data-bs-toggle="modal" data-bs-target="#Modal">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <br>
+                <form id="bookingForm">
+                    <div class="mb-3">
+                        <label for="eventName" class="form-label">Select Event:</label>
+                        <select class="form-select" id="eventName" name="eventName" required>
+                            <option value="">Select Event</option>
+                            <option value="Berlin, Germany - September 15, 2024">Berlin, Germany - September 15, 2024</option>
+                            <option value="Paris, France - June 8, 2025">Paris, France - June 8, 2025</option>
+                            <option value="Madrid, Spain - August 22, 2023">Madrid, Spain - August 22, 2023</option>
+                            <option value="Milan, Italy - November 12, 2024">Milan, Italy - November 12, 2024</option>
+                            <option value="Amsterdam, Netherlands - April 3, 2026">Amsterdam, Netherlands - April 3, 2026</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="creditCard" class="form-label">Credit Card Number:</label>
+                        <input type="text" class="form-control" id="creditCard" name="creditCard" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-custom2">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Booking Successful!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for booking the event. Details will be sent to your email address.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-custom2" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel">Learn More</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalContent">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#bookingForm').submit(function(event) {
+                event.preventDefault();
+                $('#successModal').modal('show');
+                $(this)[0].reset();
+            });
+        });
+    </script>
+  </body>
+</html>
